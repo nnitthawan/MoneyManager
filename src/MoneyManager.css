@@ -1,0 +1,367 @@
+/* ฟอนต์ */
+
+
+/* Body */
+body {
+    /* font-family:  'Noto Sans Thai', sans-serif; */
+    background-color: #fff0f6;
+    background-image: url('https://i.imgur.com/dKKaB1D.png'); /* ลายน้ำแมว */
+    background-repeat: repeat;
+    background-size: 120px;
+    background-attachment: fixed;
+    color: #4a4a4a;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+  }
+  
+
+/* App Container */
+.App {
+  max-width: 768px;
+  margin: auto;
+  /* padding: 2rem 1.5rem; */
+}
+
+/* Title */
+h1 {
+  font-size: 2rem;
+  color: #e91e63;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+/* Subtitle */
+h2 {
+  color: #ab47bc;
+  margin-bottom: 1rem;
+}
+
+/* Card */
+.card {
+  background: #ffffff;
+  border-radius: 1.5rem;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+  border: 2px solid #f8bbd0; /* สีชมพูอ่อน */
+}
+
+/* Card Content */
+.card-content.form-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+/* Grid Layout (Responsive) */
+@media (min-width: 640px) {
+  .card-content.form-grid {
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+  }
+}
+
+/* Label */
+.label {
+  font-weight: 600;
+  color: #9c27b0;
+  font-size: 1rem;
+  margin-bottom: 0.3rem;
+}
+
+/* Input */
+.input {
+  padding: 0.75rem 1rem;
+  border-radius: 1rem;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+  transition: 0.2s ease;
+  outline: none;
+  background-color: #f9f9f9; /* สีพื้นหลังอ่อน */
+}
+
+/* Focus Effect for Input */
+.input:focus {
+  border-color: #ff80ab;
+  box-shadow: 0 0 0 3px rgba(255, 128, 171, 0.2);
+  background-color: #fff0f6;  /* เปลี่ยนพื้นหลังเมื่อ focus */
+}
+
+/* Placeholder Text */
+.input::placeholder {
+  color: #9e9e9e;
+  font-style: italic;
+}
+
+/* Button */
+.button {
+  grid-column: span 2;
+  padding: 0.9rem 1.2rem;
+  font-size: 1.1rem;
+  background: #ff80ab;
+  color: white;
+  border: none;
+  border-radius: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+  margin-top: 1rem;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Button Hover Effect */
+.button:hover {
+  background: #f06292;
+}
+
+/* Record Item */
+.record-item {
+  display: flex;
+  justify-content: space-between;
+  background: #fce4ec;
+  padding: 0.75rem 1rem;
+  margin-top: 0.5rem;
+  border-radius: 1rem;
+  font-size: 1rem;
+  color: #444;
+}
+
+/* Amount (Text in Record Item) */
+.amount {
+  font-weight: bold;
+  color: #d81b60;
+}
+
+/* Divider */
+.divider {
+  border-top: 2px dashed #f8bbd0;
+  margin: 2rem 0;
+}
+
+/* Text Utility Classes */
+.text-xl {
+  font-size: 1.25rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+/* Extra Layout Adjustments */
+.flex {
+  display: flex;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.pt-3 {
+  padding-top: 0.75rem;
+}
+
+/* Record Item Expanding Effect */
+.record-item button {
+  background: #f8bbd0;
+  border-radius: 1rem;
+  padding: 0.5rem 1rem;
+  color: white;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.record-item button:hover {
+  background: #f06292;
+}
+
+.record-item button:focus {
+  outline: none;
+}
+
+/* Expanded Record Section */
+.record-item-expanded {
+  background-color: #fff0f6;
+  padding: 1rem;
+  margin-top: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  color: #444;
+}
+
+.record-item-expanded .amount {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #d81b60;
+}
+
+/* ฟอนต์ */
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@400;600&display=swap');
+
+/* Body */
+body {
+  font-family: 'Kanit', 'Noto Sans Thai', sans-serif; /* เลือกฟอนต์ที่ต้องการ */
+  background: #fff0f6;
+  margin: 0;
+  padding: 0;
+  color: #4a4a4a;
+  min-height: 100vh;
+}
+
+/* Card */
+.card {
+  background: #ffffff;
+  border-radius: 1.5rem;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+  border: 2px solid #f8bbd0; /* สีชมพูอ่อน */
+}
+
+/* Title */
+.card h2 {
+  font-size: 1.125rem;
+  color: #ab47bc;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+/* Button for Expanding */
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  /* width: 100%; */
+  padding: 1rem;
+  font-size: 1rem;
+  background-color: #f8bbd0;
+  color: #d81b60;
+  border-radius: 1rem;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.bt-del button{
+    width: fit-content;
+    background-color: #9c27b0;
+    justify-content: center;
+    color: #f8bbd0;
+}
+.bt-del  button:hover{
+    background-color: #6d0080;
+    color: #f8bbd0;
+    
+}
+
+button:hover {
+  background-color: #d81b60;
+  color: #f8bbd0;
+}
+
+button span {
+  display: flex;
+  align-items: center;
+}
+
+button span:last-child {
+  font-size: 0.875rem;
+  color: #9c27b0;
+}
+
+/* Expanded Section */
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.bg-white {
+  background-color: white;
+}
+
+.border-pink-100 {
+  border: 1px solid #f8bbd0;
+}
+
+.rounded-lg {
+  border-radius: 1rem;
+}
+
+.p-4 {
+  padding: 1rem;
+}
+
+.space-y-4 {
+  margin-top: 1rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.shadow-md {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.bg-green-100 {
+  background-color: #c8e6c9; /* รายรับ */
+  padding: 5px;
+}
+
+.bg-red-100 {
+  background-color: #ffcdd2; /* รายจ่าย */
+  padding: 5px;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+.text-sm {
+  /* font-size: 0.875rem; */
+  /* margin-left: 1rem; */
+}
+
+/* Button to Delete Record */
+button[type='button'] {
+  background-color: #ff80ab;
+  padding: 0.5rem 1rem;
+  border-radius: 0.75rem;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type='button']:hover {
+  background-color: #f06292;
+}
+
+/* Add spacing for the entire card */
+.mb-4 {
+  margin-bottom: 1rem;
+}
